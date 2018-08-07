@@ -1,3 +1,5 @@
+html
+ 
 <!DOCTYPE HTML>
 <html lang="en">
     <meta charset="utf-8">
@@ -5,15 +7,25 @@
         <title>
             Dating Website
         </title>
+       
+        <style>
+            body {
+                background-image: url("https://i.pinimg.com/originals/1f/7e/57/1f7e57b2a7caeb78ba68f643c56d5e21.jpg");
+            }
+            .blue {
+                color: navy; font-size: 25px; font-style: inherit;
+            }
+        </style>
+       
         <link rel="stylesheet" href="dating.css">
     </head>
     <h1>Simple Dating Website</h1>
     <body>
         <form>
         <fieldset>
-            <legend>Your Face</legend>
+            <legend class="blue">Your Face</legend>
             <br>
-             <label for="avatar">Your Image:</label> 
+             <label for="avatar">Your Image:</label>
             <input type="file" accept="image/*">
             <br>
             <label for="image">Image Preview:</label>
@@ -21,10 +33,10 @@
         </fieldset>
         </form>
         <br>
-        
+       
         <form>
         <fieldset>
-            <legend>Your General Details</legend>
+            <legend class="blue">Your General Details</legend>
             <br>
             <label for="name">Name:</label>
             <input type="text" accept="text/plain">
@@ -46,33 +58,33 @@
             <input id="country_name" name="country_name" type="text" list="country" />
             <datalist id="country">
                 <option value="Afghanistan">
-                <option value="Albania">
-                <option value="Algeria">
-                <option value="Andorra">
-                <option value="Angola">
+                <option value="France">
+                <option value="Brazil">
+                <option value="Japan">
+                <option value="Africa">
                 <option value="USA">
-                <option value="India">
+                <option value="Mexico">
             </datalist>
-            
+           
         </fieldset>
         </form>
-        
+       
         <br>
-        
+       
         <form>
         <fieldset>
-            <legend>Your Indicators</legend>
+            <legend class="blue">Your Indicators</legend>
             <br>
             <label for="height">State Of Exsitence:</label>
-            Alive<input id="slider1" type="range" min="0" max="100" step="10" />Deceased
+            Alive<input id="slider1" type="range" min="0" max="1" step="1" />Deceased
         </fieldset>
         </form>
-        
+       
         <br>
-        
+       
         <form>
         <fieldset>
-            <legend>Your Contact Information</legend>
+            <legend class="green">Your Contact Information</legend>
             <br>
             <label for="email">Email:</label>
             <input type="email" name="email" required placeholder="Enter a valid email address">
@@ -84,11 +96,19 @@
             <textarea></textarea>
             <br>
             <label for="contact">Method to contact you:</label>
-            <input type="checkbox">Email<input type="checkbox">WhatsApp<input type="checkbox">InAppChat
+            <input type="checkbox">Email<input type="checkbox">Mobile<input type="checkbox">InAppChat
         </fieldset>
         </form>
     </body>
-    
+   
     <br>
     <input type=submit value=Submit>
 </html>
+ 
+ 
+CSS
+.blue {
+    color: navy;
+    font-size: 25px;
+    font-style: inherit;
+}
